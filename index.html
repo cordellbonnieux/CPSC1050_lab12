@@ -89,9 +89,6 @@
         max-width:100%;
     }
 </style>
-<script src="">
-
-</script>
 <body>
     <div id="wrapper">
         <div id="topbar">
@@ -101,11 +98,11 @@
             <div id="menu">
                 <div id="menuWrapper">
                     <ul>
-                        <li class="menuItem"><a href="#" class="menuLink">About</a></li>
+                        <li class="menuItem"><a href="#about" class="menuLink" id="aboutLink">About</a></li>
                         <span>|</span>
-                        <li class="menuItem"><a href="#" class="menuLink">Dev</a></li>
+                        <li class="menuItem"><a href="#dev" class="menuLink" id="devLink">Dev</a></li>
                         <span>|</span>
-                        <li class="menuItem"><a href="#" class="menuLink">Music</a></li>
+                        <li class="menuItem"><a href="#music" class="menuLink" id="musicLink">Music</a></li>
                     </ul>
                 </div>
             </div>
@@ -121,7 +118,7 @@
                     <p>Hello I am Cordell this page is about me. I am a Computer Science major student at Langara, aside from that on the side I work as a web developer & perform as a musician.
                         I have traveled and performed all over the world in various groups, and when covid hit it was time to finally pursue a Computer Science degree which is something I had 
                         always wanted to do but never had the time because of a busy tour schedule. Other than that I live in Vancouver with my girl friend and cat, who I love and enjoy spending time with.
-                        With my free time I play to play music, collect records, listen to music, program / develop, make games in unreal and unity engines, play video games and cook! 
+                        On my free time I like to play music, collect records, listen to music, program / develop, make games in unreal and unity engines, play video games and cook! 
                         I have been vegan for the past 10 years now, and enjoy long walks on the beach (which I frequently do!).
                         <br><br>
                         <i>So I know this project didn't ask for all this fancy CSS and JavaScript nonesense but I assure you that I made this page to still work with out it!
@@ -223,5 +220,36 @@
         </div>
 
     </div>
+    <script>
+        let about = document.getElementById('about');
+        let dev = document.getElementById('dev');
+        let music = document.getElementById('music');
+    
+        let aboutLink = document.getElementById('aboutLink');
+        let devLink = document.getElementById('devLink');
+        let musicLink = document.getElementById('musicLink');
+    
+        dev.style.display = "none";
+        music.style.display = "none";
+    
+        aboutLink.addEventListener('click', function() { 
+            event.preventDefault();
+            about.style.display = "block";
+            dev.style.display = "none";
+            music.style.display = "none"; 
+        });
+        devLink.addEventListener('click', function() { 
+            event.preventDefault();
+            about.style.display = "none";
+            dev.style.display = "block";
+            music.style.display = "none"; 
+        });
+        musicLink.addEventListener('click', function() { 
+            event.preventDefault();
+            about.style.display = "none";
+            dev.style.display = "none";
+            music.style.display = "block"; 
+        });
+    </script>
 </body>
 </html>
