@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Cordell's Biography</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+    body {
+        background-color:grey;
+    }
+    #wrapper{
+        background-color:#fff;
+        width:80%;
+        margin:10px auto;
+        padding:10px;
+    }
+    #topbar {
+        display:flex;
+    }
+    #titleWrapper {
+        margin:0 auto 0 5%;
+    }
+    #menu{
+        display:inline-block;
+        margin:0 10% 0 auto;
+    }
+    #menuWrapper{
+        padding-top:10%;
+    }
+    #menu ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+        #menu ul li{
+            display:inline;
+        }
+    .menuItem {
+        font-size:1.3em;
+        margin:7px 7px 0 7px;
+    }
+        .menuItem a {
+            text-decoration:none;
+            transition:0.3s;
+        }
+        .menuItem a:hover, .menuItem a:focus {
+            text-decoration:underline;
+        }
+    .page {
+        padding:10%;
+    }
+    .contentWrapper {
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .leftHalf {
+        margin-right:25%;
+    }
+    .fourContainer {
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .oneFourth {
+        padding:14px;
+        background-color:grey;
+        margin:14px;
+        max-width:100%;
+    }
+    .oneFourth img {
+        max-width:100%;
+    }
+</style>
+<script src="">
+
+</script>
+<body>
+    <div id="wrapper">
+        <div id="topbar">
+            <div id="titleWrapper">
+                <h1>Cordell's Biography</h1>
+            </div>
+            <div id="menu">
+                <div id="menuWrapper">
+                    <ul>
+                        <li class="menuItem"><a href="#" class="menuLink">About</a></li>
+                        <span>|</span>
+                        <li class="menuItem"><a href="#" class="menuLink">Dev</a></li>
+                        <span>|</span>
+                        <li class="menuItem"><a href="#" class="menuLink">Music</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about" class="page">
+            <div class="contentWrapper">
+                <div class="contentContainer leftHalf">
+                    <img src="cordell.png" id="profileImg"><img>
+                </div>
+                <div class="contentContainer">
+                    <h2>About Me</h2>
+                    <p>Hello I am Cordell this page is about me!</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="dev" class="page">
+            <div class="contentWrapper">
+                <div class="contentContainer">
+                    <h2>Dev Projects</h2>
+                    <p>I like to make little projects using Nodejs, Reactjs and just programming with JavaScript in general! I'm still "new" to programming in C++ and C#,
+                        so I don't really want to share any projects in those languages just yet. However here's a handful of personal projects.
+                    </p>
+                    <i>(although I work as a web developer I don't feel comfortable sharing my client's information for this project)</i>
+                </div>
+                <div class="contentContainer fourContainer">
+                    <div class="oneFourth">
+                        <h3>project title</h3>
+                        <a href="#">live link</a><br>
+                        <a href="#">repo link</a>
+                        <p>short description here</p>
+                    </div>
+                    <div class="oneFourth">
+                        <h3>project title</h3>
+                        <a href="#">live link</a><br>
+                        <a href="#">repo link</a>
+                        <p>short description here</p>
+                    </div>
+                    <div class="oneFourth">
+                        <h3>project title</h3>
+                        <a href="#">live link</a><br>
+                        <a href="#">repo link</a>
+                        <p>short description here</p>
+                    </div>
+                    <div class="oneFourth">
+                        <h3>project title</h3>
+                        <a href="#">live link</a><br>
+                        <a href="#">repo link</a>
+                        <p>short description here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="music" class="page">
+            <div class="contentWrapper">
+                <div class="contentContainer">
+                    <h2>Music</h2>
+                    <p>I've spent most of my life playing and performing music, and along the way I have played in several groups and on several records. I have performed live in about 20 countries,
+                        most of the states (I think around 35), and most of the provinces! Here is a very small sample of some of the records I've played on.
+                    </p>
+                </div>
+                <div class="contentContainer fourContainer">
+                    <div class="oneFourth">
+                        <h3>Phane S/T LP</h3>
+                        <img src="phane_lp.jpg"></img><br>
+                        <a href="https://phanepunx.bandcamp.com/album/phane">Listen to it here</a><br>
+                        <b>Role: Guitar</b>
+                        <p>This is my "main" band, we've played around the world together and this is our debut LP!
+                            We recorded this last year and it came out early on this year on Phobia Records.</p>
+                    </div>
+                    <div class="oneFourth">
+                        <h3>Scheme S/T</h3>
+                        <img src="scheme.jpg"></img><br>
+                        <a href="https://schemepunk.bandcamp.com/releases">Listen to it here</a><br>
+                        <b>Role: Vocals</b>
+                        <p>This band is composed of members of Naplam Raid, Massgrave, Decontrol and myself. We started a few years ago and on and off record / perform.</p>
+                    </div>
+                    <div class="oneFourth">
+                        <h3>Brutalize - Demo</h3>
+                        <img src="brutalize.jpg"></img><br>
+                        <a href="https://brutalize.bandcamp.com/releases">Listen to it here</a><br>
+                        <b>Role: Drums</b>
+                        <p>A group I'm doing on the side with some friends (The Moor, No Klasse), playing some good ol' fashioned filthy raw punk and this is our demo!</p>
+                    </div>
+                    <div class="oneFourth">
+                        <h3>Despair - Visions Of The Inferno LP</h3>
+                        <img src="brutalize.jpg"></img><br>
+                        <a href="https://www.youtube.com/watch?v=pGIC75qInnk">Listen to it here</a><br>
+                        <b>Role: Guitar</b>
+                        <p>A group I'm doing on the side with some friends (The Moor, No Klasse), playing some good ol' fashioned filthy raw punk and this is our demo!</p>
+                    </div>
+                    <div class="oneFourth">
+                        <h3>Suss Law - Fight Against the Slimebags</h3>
+                        <img src="suss-law.jpg"></img><br>
+                        <a href="https://www.youtube.com/watch?v=HBdJNRHcVKQ">Listen to it here</a><br>
+                        <b>Role: Vocals</b>
+                        <p>this band I played in until covid really, since from mid 2015! Based in Portland OR (I would commute to rehearse etc), we toured all over the place,
+                            and this recording originally we released as a tour demo tape to make a few bucks, but was recently recived a propper release from No Name Records in Ukraine early this year.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
