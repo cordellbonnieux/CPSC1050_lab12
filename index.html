@@ -53,19 +53,39 @@
         flex-wrap:wrap;
     }
     .leftHalf {
-        margin-right:25%;
+        margin-right:5%;
     }
-    .fourContainer {
+    .rightHalf {
+        max-width: 50%;
+        display: inline-block;
+        margin: 0 0 0 auto;
+    }
+    .rightHalf i{
+        font-size:0.8em;
+    }
+    .fourContainer, .oneContainer {
         display:flex;
         flex-wrap:wrap;
     }
-    .oneFourth {
+    .oneFourth, .one {
         padding:14px;
         background-color:grey;
         margin:14px;
+    }
+    .oneFourth img, .one img {
         max-width:100%;
     }
-    .oneFourth img {
+    .oneFourth {
+        max-width:150px;
+    }
+    .oneFourth p{
+        font-size:0.8em;
+    }
+    .oneFourth a{
+        margin:5px 0;
+        display:inline-block;
+    }
+    .oneHalf {
         max-width:100%;
     }
 </style>
@@ -96,9 +116,17 @@
                 <div class="contentContainer leftHalf">
                     <img src="cordell.png" id="profileImg"><img>
                 </div>
-                <div class="contentContainer">
+                <div class="contentContainer rightHalf">
                     <h2>About Me</h2>
-                    <p>Hello I am Cordell this page is about me!</p>
+                    <p>Hello I am Cordell this page is about me. I am a Computer Science major student at Langara, aside from that on the side I work as a web developer & perform as a musician.
+                        I have traveled and performed all over the world in various groups, and when covid hit it was time to finally pursue a Computer Science degree which is something I had 
+                        always wanted to do but never had the time because of a busy tour schedule. Other than that I live in Vancouver with my girl friend and cat, who I love and enjoy spending time with.
+                        With my free time I play to play music, collect records, listen to music, program / develop, make games in unreal and unity engines, play video games and cook! 
+                        I have been vegan for the past 10 years now, and enjoy long walks on the beach (which I frequently do!).
+                        <br><br>
+                        <i>So I know this project didn't ask for all this fancy CSS and JavaScript nonesense but I assure you that I made this page to still work with out it!
+                        So if you turn off JavaScript it will still function, I hope you like it!</i>
+                    </p>
                 </div>
             </div>
         </div>
@@ -114,28 +142,30 @@
                 </div>
                 <div class="contentContainer fourContainer">
                     <div class="oneFourth">
-                        <h3>project title</h3>
-                        <a href="#">live link</a><br>
-                        <a href="#">repo link</a>
-                        <p>short description here</p>
+                        <h3>Tic Tac Toe</h3>
+                        <a href="https://cordellbonnieux.github.io/tic-tac-toe/" target="_blank">Try it out!</a><br>
+                        <a href="https://github.com/cordellbonnieux/tic-tac-toe" target="_blank">repo link</a>
+                        <p>Just what it says, a game of tic-tac-toe! 1 player vs AI or 2 player, coded in Nodejs.</p>
                     </div>
                     <div class="oneFourth">
-                        <h3>project title</h3>
-                        <a href="#">live link</a><br>
-                        <a href="#">repo link</a>
-                        <p>short description here</p>
+                        <h3>Etch-e-sketch</h3>
+                        <a href="https://cordellbonnieux.github.io/etch-a-sketch/" target="_blank">Try it out!</a><br>
+                        <a href="https://github.com/cordellbonnieux/etch-a-sketch" target="_blank">repo link</a>
+                        <p>An older project of mine so the code makes me cringe a bit now, but despite that I'm still proud of this one.</p>
                     </div>
                     <div class="oneFourth">
-                        <h3>project title</h3>
-                        <a href="#">live link</a><br>
-                        <a href="#">repo link</a>
-                        <p>short description here</p>
+                        <h3>Weather App</h3>
+                        <a href="https://cordellbonnieux.github.io/Weather-App/" target="_blank">live link</a><br>
+                        <a href="https://github.com/cordellbonnieux/Weather-App" target="_blank">repo link</a>
+                        <p>This project I made to practing async event handling. Basically you type in a city or town, enter the 
+                            country and you'll get information about the weather there plus a nice piece of photography from that searched region!
+                        </p>
                     </div>
                     <div class="oneFourth">
-                        <h3>project title</h3>
-                        <a href="#">live link</a><br>
-                        <a href="#">repo link</a>
-                        <p>short description here</p>
+                        <h3>To-do List</h3>
+                        <a href="https://cordellbonnieux.github.io/todo_list/" target="_blank">live link</a><br>
+                        <a href="https://github.com/cordellbonnieux/todo_list" target="_blank">repo link</a>
+                        <p>A programming basics classic, gotta have that here!</p>
                     </div>
                 </div>
             </div>
@@ -149,40 +179,40 @@
                         most of the states (I think around 35), and most of the provinces! Here is a very small sample of some of the records I've played on.
                     </p>
                 </div>
-                <div class="contentContainer fourContainer">
-                    <div class="oneFourth">
+                <div class="contentContainer oneContainer">
+                    <div class="one">
                         <h3>Phane S/T LP</h3>
                         <img src="phane_lp.jpg"></img><br>
-                        <a href="https://phanepunx.bandcamp.com/album/phane">Listen to it here</a><br>
+                        <a href="https://phanepunx.bandcamp.com/album/phane" target="_blank">Listen to it here</a><br>
                         <b>Role: Guitar</b>
                         <p>This is my "main" band, we've played around the world together and this is our debut LP!
                             We recorded this last year and it came out early on this year on Phobia Records.</p>
                     </div>
-                    <div class="oneFourth">
+                    <div class="one">
                         <h3>Scheme S/T</h3>
                         <img src="scheme.jpg"></img><br>
-                        <a href="https://schemepunk.bandcamp.com/releases">Listen to it here</a><br>
+                        <a href="https://schemepunk.bandcamp.com/releases" target="_blank">Listen to it here</a><br>
                         <b>Role: Vocals</b>
                         <p>This band is composed of members of Naplam Raid, Massgrave, Decontrol and myself. We started a few years ago and on and off record / perform.</p>
                     </div>
-                    <div class="oneFourth">
+                    <div class="one">
                         <h3>Brutalize - Demo</h3>
                         <img src="brutalize.jpg"></img><br>
-                        <a href="https://brutalize.bandcamp.com/releases">Listen to it here</a><br>
+                        <a href="https://brutalize.bandcamp.com/releases" target="_blank">Listen to it here</a><br>
                         <b>Role: Drums</b>
                         <p>A group I'm doing on the side with some friends (The Moor, No Klasse), playing some good ol' fashioned filthy raw punk and this is our demo!</p>
                     </div>
-                    <div class="oneFourth">
+                    <div class="one">
                         <h3>Despair - Visions Of The Inferno LP</h3>
-                        <img src="brutalize.jpg"></img><br>
-                        <a href="https://www.youtube.com/watch?v=pGIC75qInnk">Listen to it here</a><br>
+                        <img src="despair.jpg"></img><br>
+                        <a href="https://www.youtube.com/watch?v=pGIC75qInnk" target="_blank">Listen to it here</a><br>
                         <b>Role: Guitar</b>
-                        <p>A group I'm doing on the side with some friends (The Moor, No Klasse), playing some good ol' fashioned filthy raw punk and this is our demo!</p>
+                        <p>This LP was released in 2018, but we had recorded it in 2015... A long story why it took so long but I won't get into it here!</p>
                     </div>
-                    <div class="oneFourth">
+                    <div class="one">
                         <h3>Suss Law - Fight Against the Slimebags</h3>
                         <img src="suss-law.jpg"></img><br>
-                        <a href="https://www.youtube.com/watch?v=HBdJNRHcVKQ">Listen to it here</a><br>
+                        <a href="https://www.youtube.com/watch?v=HBdJNRHcVKQ" target="_blank">Listen to it here</a><br>
                         <b>Role: Vocals</b>
                         <p>this band I played in until covid really, since from mid 2015! Based in Portland OR (I would commute to rehearse etc), we toured all over the place,
                             and this recording originally we released as a tour demo tape to make a few bucks, but was recently recived a propper release from No Name Records in Ukraine early this year.
