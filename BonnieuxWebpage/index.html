@@ -3,12 +3,20 @@
 <meta charset="UTF-8">
 <title>Cordell's Biography</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet"> 
+</head>
 <style>
+    h1,h2,h3,h4,h5 {
+        font-family: 'Roboto', sans-serif;
+    }
     body {
-        background-color:grey;
+        background-color:#3c415c;
+        font-family: 'Montserrat', sans-serif;
+        color:#b4a5a5;
     }
     #wrapper{
-        background-color:#fff;
         width:80%;
         margin:10px auto;
         padding:10px;
@@ -16,12 +24,9 @@
     #topbar {
         display:flex;
     }
-    #titleWrapper {
-        margin:0 auto 0 5%;
-    }
     #menu{
         display:inline-block;
-        margin:0 10% 0 auto;
+        margin:0 2% 0 auto;
     }
     #menuWrapper{
         padding-top:10%;
@@ -41,12 +46,14 @@
         .menuItem a {
             text-decoration:none;
             transition:0.3s;
+            color:#b4a5a5;
         }
         .menuItem a:hover, .menuItem a:focus {
             text-decoration:underline;
         }
     .page {
         padding:10%;
+        background-color:#151515;
     }
     .contentWrapper {
         display:flex;
@@ -56,9 +63,14 @@
         margin-right:5%;
     }
     .rightHalf {
-        max-width: 50%;
+        max-width: 60%;
         display: inline-block;
         margin: 0 0 0 auto;
+    }
+    @media only screen and (max-width: 1300px) {
+        .rightHalf {
+            max-width:100%;
+        }
     }
     .rightHalf i{
         font-size:0.8em;
@@ -69,20 +81,25 @@
     }
     .oneFourth, .one {
         padding:14px;
-        background-color:grey;
+        background-color:#3c415c;
         margin:14px;
+        border-radius:0 10px 0 0;
     }
     .oneFourth img, .one img {
         max-width:100%;
     }
-    .oneFourth {
-        max-width:150px;
+    .oneFourth a, .one a, .one b {
+        color:#b4a5a5;
+        margin:5px;
     }
-    .oneFourth p{
+    .oneFourth {
+        max-width:200px;
+    }
+    .oneFourth p, .oneFourth li{
         font-size:0.8em;
+        padding:0;
     }
     .oneFourth a{
-        margin:5px 0;
         display:inline-block;
     }
     .oneHalf {
@@ -120,10 +137,83 @@
                         always wanted to do but never had the time because of a busy tour schedule. Other than that I live in Vancouver with my girl friend and cat, who I love and enjoy spending time with.
                         On my free time I like to play music, collect records, listen to music, program / develop, make games in unreal and unity engines, play video games and cook! 
                         I have been vegan for the past 10 years now, and enjoy long walks on the beach (which I frequently do!).
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        I am originally from Victoria B.C., though I have lived in Vancouver since 2014. After graduation I plan on transfering to SFU (my mind might chnage),
+                        and go for a Bachelor's in CS. In ten years I hope to be making indie games, perhaps working at a game dev or web dev company. It's not that I am uncertain about
+                        what I want to do (or my stack) it's more that I am open to what life brings me. And as long as I'm doing what I love (programming and playing music) I will be happy.
                         <br><br>
                         <i>So I know this project didn't ask for all this fancy CSS and JavaScript nonesense but I assure you that I made this page to still work with out it!
                         So if you turn off JavaScript it will still function, I hope you like it!</i>
                     </p>
+                </div>
+                <div>
+                    <h3>Here are some of my favourite things...</h3>
+                    <div class="fourContainer">
+                        <div class="oneFourth">
+                            <h4>Foods</h4>
+                            <ul>
+                                <li>Curry</li>
+                                <li>Soups</li>
+                                <li>Creps</li>
+                                <li>Tacos</li>
+                                <li>Vermicelli Bowls</li>
+                                <li>Decked out Salads</li>
+                                <li>Spreads / Hummus</li>
+                                <li>Beans & Legumes</li>
+                            </ul>
+                        </div>
+                        <div class="oneFourth">
+                            <h4>SOME of my favourite Musical Groups.</h4>
+                            <ul>
+                                <li>Discharge</li>
+                                <li>Unruled</li>
+                                <li>Broken Bones</li>
+                                <li>Driller Killer</li>
+                                <li>English Dogs</li>
+                                <li>The Skeptix</li>
+                                <li>Further Charges</li>
+                                <li>Komintern Sect</li>
+                            </ul>
+                        </div>
+                        <div class="oneFourth">
+                            <h4>Most despised Foods</h4>
+                            <ul>
+                                <li>Fast Food in general</li>
+                                <li>Food that requires torturing or killing animals for</li>
+                                <li>Frozen dinners (or 'TV Dinners' for all the ZZTop fans)</li>
+                                <li>Gas Station 'Food'</li>
+                                <li>Bad Mexican food in Canada specifically</li>
+                                <li>Pretty much anything from England</li>
+                            </ul>
+                        </div>
+                        <div class="oneFourth">
+                            <h4>Books</h4>
+                            <ul>
+                                <li>1984</li>
+                                <li>Eloquent JavaScript</li>
+                                <li>Burning Britain</li>
+                                <li>The Day The Country Died</li>
+                                <li>Solitary Fitness</li>
+                                <li>The Theory of Everything</li>
+                            </ul>
+                        </div>
+                        <div class="oneFourth">
+                            <h4>Movies</h4>
+                            <ul>
+                                <li>2001: A Space Odyssy</li>
+                                <li>Conan The Barbarian (the original one!)</li>
+                                <li>Full Metal Jacket</li>
+                                <li>Predator</li>
+                                <li>Bloodsport</li>
+                                <li>Night of The Living Dead</li>
+                                <li>Apocalypse Now</li>
+                                <li>Deer Hunter</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,6 +309,7 @@
             </div>
         </div>
 
+        <a href="links.htm" style="margin:10px; font-size:2em; color:#b4a5a5;">Here are my favourite links!</a>
     </div>
     <script>
         let about = document.getElementById('about');
